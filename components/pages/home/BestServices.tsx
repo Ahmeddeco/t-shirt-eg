@@ -1,7 +1,7 @@
-import { servicesCard } from "@/constants/servicesCard"
+import { servicesCard } from "@/constants/cards"
 import ServicesCard from "./ServicesCard"
 import { Button } from "@/components/ui/button"
-import { ArrowRightCircle } from "lucide-react"
+import { CircleChevronRight } from "lucide-react"
 import Link from "next/link"
 
 export default function BestServices() {
@@ -15,16 +15,16 @@ export default function BestServices() {
 							we always provide <br />
 							<span className="text-primary"> best services</span>
 						</h2>
-						<h6 className="max-w-lg">
+						<p className="max-w-lg">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id mollitia quisquam totam molestias
 							possimus modi esse .
-						</h6>
+						</p>
 					</div>
 					<Button asChild variant={"link"}>
 						{/* TODO edit link */}
 						<Link href={"#"}>
 							load more
-							<ArrowRightCircle />
+							<CircleChevronRight />
 						</Link>
 					</Button>
 				</section>

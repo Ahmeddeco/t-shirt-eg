@@ -13,9 +13,9 @@ type Props = {
 
 export default function ServicesCard({ description, icon, title, titleBr, bgReverse = false, iconColor }: Props) {
 	return (
-		<Card className={`${bgReverse && "bg-foreground text-background"} max-w-md aspect-square `}>
+		<Card className={`${bgReverse && "bg-foreground text-background"} w-md aspect-10/12 `}>
 			<CardContent className="flex flex-col gap-8 items-center justify-center h-full">
-				{React.createElement(icon, { color: iconColor, size: 72, fill: iconColor })}
+				{React.createElement(icon, { size: 72, fill: iconColor, absoluteStrokeWidth: true })}
 				<h2 className="text-center">
 					{title}
 					<br />
