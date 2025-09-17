@@ -2,8 +2,6 @@
 
 import CircleProgress from "@/components/shared/CircleProgress"
 import { circleOurPerformanceProgress } from "@/constants/cards"
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar"
-import "react-circular-progressbar/dist/styles.css"
 
 export default function OurPerformance() {
 	return (
@@ -21,7 +19,7 @@ export default function OurPerformance() {
 			<div className="w-full flex flex-wrap items-center justify-center gap-8">
 				{circleOurPerformanceProgress.map(({ title, value }, index) => (
 					<div key={index} className="flex flex-col items-center justify-center gap-8">
-						<CircleProgress value={value} strokeWidth={2}/>
+						<CircleProgress value={value} strokeWidth={2} />
 						<h4 className="text-muted-foreground uppercase">{title}</h4>
 					</div>
 				))}

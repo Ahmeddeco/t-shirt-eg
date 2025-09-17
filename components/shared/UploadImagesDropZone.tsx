@@ -61,11 +61,13 @@ export function UploadManyImagesDropZone({ dbImages, label = "images", imagesNam
 							config={{ cn: twMerge }}
 							className="ut-button:bg-foreground ut-button:text-background ut-button:px-8 ut-button:py-4 ut-ready:p-12 ut-readying:p-12 ut-uploading:p-12 ut-label:text-foreground ut-upload-icon:size-12 ut-upload-icon:text-foreground "
 							endpoint={"manyImagesUploader"}
+							/* eslint-disable @typescript-eslint/no-explicit-any */
 							onClientUploadComplete={(res: any) => {
-								setImages(res.map((r: any) => r.ufsUrl))
+								setImages(res.map((r: any) => r.ufsUrl)) /* eslint-disable @typescript-eslint/no-explicit-any */
 								toast.success("Images uploaded successfully")
 							}}
 							onUploadError={(e: any) => {
+								/* eslint-disable @typescript-eslint/no-explicit-any */
 								toast.error(`Something went wrong: ${e}`)
 							}}
 						/>
@@ -116,10 +118,12 @@ export function UploadOneImagesDropZone({ dbImage, label = "image", imageName = 
 							className="ut-button:bg-foreground ut-button:text-background ut-button:px-8 ut-button:py-4 ut-ready:p-12 ut-readying:p-12 ut-uploading:p-12 ut-label:text-foreground ut-upload-icon:size-12 ut-upload-icon:text-foreground "
 							endpoint={"oneImageUploader"}
 							onClientUploadComplete={(res: any) => {
+								/* eslint-disable @typescript-eslint/no-explicit-any */
 								setImage(res[0].ufsUrl)
 								toast.success("Image uploaded successfully")
 							}}
 							onUploadError={(e: any) => {
+								/* eslint-disable @typescript-eslint/no-explicit-any */
 								toast.error(`Something went wrong: ${e}`)
 							}}
 						/>
