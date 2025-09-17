@@ -15,10 +15,10 @@ export default function ProductCard({ isBestSell, image, price, title }: Props) 
 		<Card
 			className={` ${
 				isBestSell ? "bg-foreground text-background" : "bg-background text-foreground"
-			} w-md aspect-3/4 py-0  relative`}
+			} w-md aspect-3/4 py-0 relative`}
 		>
 			{isBestSell && (
-				<Button variant={"primary"} className="absolute -top-6 left-0 rounded-md z-10 ">
+				<Button variant={"primary"} size={"sm"} className="absolute top-2 left-2 cursor-none z-10 ">
 					best sell
 				</Button>
 			)}
@@ -36,7 +36,7 @@ export default function ProductCard({ isBestSell, image, price, title }: Props) 
 			>
 				<h2>{title}</h2>
 				<div className="flex w-full px-4 items-center justify-between">
-					<h4>${price}</h4>
+					<h2>${price}</h2>
 					<Button variant={isBestSell ? "primary" : "default"} size={"default"}>
 						add to cart
 					</Button>

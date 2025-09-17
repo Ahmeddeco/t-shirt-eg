@@ -33,19 +33,39 @@ export const productCards = [
   {
     title: "3d print",
     price: "50$",
-    image: "/hero1.png",
+    image: "/hero1.webp",
     isBestSell: false
   },
   {
     title: "3d print",
     price: "18$",
-    image: "/hero.png",
+    image: "/hero.webp",
     isBestSell: true
   },
   {
     title: "3d print",
     price: "50$",
-    image: "/WhatWeProvide.png",
+    image: "/WhatWeProvide.webp",
     isBestSell: false
+  },
+]
+
+/* ---------------------- circleOurPerformanceProgress ---------------------- */
+export const circleOurPerformanceProgress = [
+  {
+    value: 94,
+    title: "high quality"
+  },
+  {
+    value: 89,
+    title: "online selling"
+  },
+  {
+    value: 83,
+    title: "t-shirt design"
+  },
+  {
+    value: 97,
+    title: "Completed purchases"
   },
 ]

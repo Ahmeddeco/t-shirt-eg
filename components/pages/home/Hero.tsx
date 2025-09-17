@@ -25,7 +25,7 @@ export default function Hero() {
 				</div>
 				<div className="relative lg:w-1/2 w-full lg:h-full h-96 ">
 					<Image
-						src={"/hero1.png"}
+						src={"/hero1.webp"}
 						alt={"hero"}
 						fill
 						className="object-cover bg-radial from-white via-transparent to-transparent "

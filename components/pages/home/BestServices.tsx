@@ -29,7 +29,7 @@ export default function BestServices() {
 					</Button>
 				</section>
 				{/* ---------------------------------- cards --------------------------------- */}
-				<div className="flex flex-col gap-8 lg:flex-row lg:justify-between items-center w-full">
+				<div className="flex flex-wrap gap-8 justify-center items-center w-full">
 					{servicesCard.map(({ description, icon, title, titleBr, bgReverse, iconColor }, index) => (
 						<ServicesCard
 							key={index}

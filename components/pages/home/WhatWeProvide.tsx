@@ -6,7 +6,7 @@ export default function WhatWeProvide() {
 	return (
 		<section className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-12 lg:h-[60vh] h-auto lg:pb-0">
 			<div className="relative lg:w-1/2 w-full h-full  aspect-square ">
-				<Image src={"/WhatWeProvide.png"} alt={"What We Provide"} fill className="object-cover" />
+				<Image src={"/WhatWeProvide.webp"} alt={"What We Provide"} fill className="object-cover" />
 				<Star
 					color="#d4d4d4"
 					fill="#d4d4d4"

@@ -35,7 +35,6 @@ export default async function RootLayout({
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
 					<Header />
 					<main className="mt-12 min-h-dvh  ">{children}</main>
-					<Footer />
 					<Toaster
 						theme="system"
 						richColors
@@ -46,6 +45,7 @@ export default async function RootLayout({
 							error: <CircleX />,
 						}}
 					/>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>

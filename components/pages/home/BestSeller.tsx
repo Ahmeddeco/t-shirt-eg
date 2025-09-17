@@ -28,7 +28,7 @@ export default function BestSeller() {
 					</Button>
 				</div>
 				{/* ---------------------------------- cards --------------------------------- */}
-				<div className="flex lg:flex-row flex-col items-center justify-between gap-8">
+				<div className="flex flex-wrap items-center justify-center gap-8">
 					{productCards.map(({ isBestSell, image, price, title }, index) => (
 						<ProductCard key={index} isBestSell={isBestSell} image={image} price={price} title={title} />
 					))}
